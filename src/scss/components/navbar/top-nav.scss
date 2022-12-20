@@ -1,0 +1,203 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    height: 12vh;
+    min-height: 60px;
+
+    width: 100vw;
+
+    .logo {
+        position: relative;
+        width: 200px;
+        height: 50px;
+
+        .logo-img {
+            position: absolute;
+            width: 200px;
+            object-fit: cover;
+            top: -50px;
+        }
+    }
+
+    .mid {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-link {
+                padding: 1rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                transition: color 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
+
+                &:hover {
+                    color: var(--accent-color);
+                    cursor: pointer;
+                }
+
+                &.active {
+                    color: var(--accent-color);
+                }
+            }
+        }
+    }
+
+    .end {
+        margin-right: 2rem;
+
+        .action {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .portfolio-link {
+            padding: 1rem 2rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: all 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
+
+            &:hover {
+                background-color: var(--accent-color);
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+
+        .chat-icon-container {
+            lottie-player {
+                width: 50px;
+                height: 50px;
+
+                transition: scale 0.5s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    scale: 1.2;
+
+                    transition: scale 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
+                }
+            }
+
+            .chat-notification {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: red;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .ham {
+            display: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            .bar {
+                width: 30px;
+                height: 3px;
+                background-color: var(--accent-color);
+                margin: 5px;
+                transition: all 0.3s cubic-bezier(0, 0.7, 0.4, 0.9);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    .nav {
+        .nav-links {
+            width: fit-content;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 0;
+
+        .logo {
+            margin-left: -20px;
+        }
+
+        .mid{
+            top: -100%;
+
+            transition: top 0.5s cubic-bezier(0, 1.26, 0.59, 0.82);
+        }
+
+        .mid.active {
+            background-color: var(--accent-color);
+            top: 12vh;
+            height: 50vh;
+            width: 100%;
+
+            transition: top 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
+
+            .nav-links {
+                flex-direction: column;
+                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                padding: 2rem 0;
+                background-color: var(--primary-color);
+            }
+        }
+
+        .end {
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+
+            .portfolio-link {
+                display: none;
+            }
+
+            .ham {
+                display: block;
+            }
+
+            .ham.active{
+                .bar {
+                    &:nth-child(1) {
+                        transform: rotate(45deg) translate(7px, 7px);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        transform: rotate(-45deg) translate(5px, -5px);
+                    }
+                }
+            }
+
+            .chat-icon-container {
+                lottie-player {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
