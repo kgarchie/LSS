@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Home</title>
 </head>
 
 <style>
     .swiper {
         width: 100vw;
-        height: clamp(70vh, 88vh, 100vh);
+        height: clamp(70vh, 85vh, 100vh);
     }
 </style>
 <nav class="nav">
@@ -30,9 +33,9 @@
     <div class="end">
         <div class="action">
             <div class="chat">
-                <a class="chat-icon-container" role="button">
-                    <lottie-player speed="0.3" src="js/lottie/chat.json" background="transparent" loop hover
-                        autoplay></lottie-player>
+                <a class="chat-icon-container" role="button" href="#contact">
+                    <lottie-player speed="0.3" src="js/lottie/chat.json" background="transparent" loop hover autoplay>
+                    </lottie-player>
                 </a>
             </div>
             <div class="portfolio-link">
@@ -46,77 +49,100 @@
         </div>
     </div>
 </nav>
-<section class="slider-js">
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="image-container">
-                    <img src="images/stock/security-slide-1.jpg" alt="">
-                    <div class="image-caption">
-                        <div class="col">
-                            <h1>Secure</h1>
-                            <p>Security is our top priority</p>
-                        </div>
-                        <a href="" role="button" class="call-to-action">Get Assuarance</a>
+<section class="slider">
+    <div class="slider-js">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/stock/security-slide-1.jpg" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="image-container">
-                    <img src="images/stock/security-slide-2.jpg" alt="">
-                    <div class="image-caption">
-                        <div class="col">
-                            <h1>Service</h1>
-                            <p>Get the number one service</p>
-                        </div>
-                        <a href="" role="button" class="call-to-action">Get Served</a>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/stock/security-slide-2.jpg" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="image-container">
-                    <img src="images/stock/security-slide-3.jpg" alt="">
-                    <div class="image-caption">
-                        <div class="col">
-                            <h1>Reputable</h1>
-                            <p>We have a great reputations</p>
-                        </div>
-                        <a href="" role="button" class="call-to-action">Our Clients</a>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/stock/security-slide-3.jpg" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="image-container">
-                    <img src="images/stock/security-slide-4.jpg" alt="">
-                    <div class="image-caption">
-                        <div class="col">
-                            <h1>Care</h1>
-                            <p>We care for more than just your property</p>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/stock/security-slide-4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="images/stock/security-slide-5.jpg" alt="">
                         </div>
-                        <a href="" role="button" class="call-to-action">Our Values</a>
                     </div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-slide">
-                <div class="image-container">
-                    <img src="images/stock/security-slide-5.jpg" alt="">
-                    <div class="image-caption">
-                        <div class="col">
-                            <h1>Robust</h1>
-                            <p>Our personel are robust and well trained</p>
-                        </div>
-                        <a href="" role="button" class="call-to-action">Our Team</a>
-                    </div>
+        </div>
+    </div>
+
+    <div class="image-caption"></div>
+</section>
+<section class="contact-us">
+    <div class="email-div" id="contact">
+        <h1>Contact Us</h1>
+        <div class="form">
+            <div class="form-div">
+                <label for="email" class="form-input-label">Your Email:</label>
+                <input type="text" placeholder="someone@domain.com" id="email">
+            </div>
+            <div class="form-div">
+                <label for="message" class="form-input-label">Your Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Write your message here 😁"></textarea>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="shop-now">Send Email</button>
+            or
+            <button class="duse" onclick="openWhatsApp()">WhatsApp</button>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="custom-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="/">about us</a></li>
+                    <li><a href="/">our services</a></li>
+                    <li><a href="/about/">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="/about/">FAQ</a></li>
+                    <li><a href="https://github.com/kgarchie/barber-shops" target="_blank">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links" style="width: 200px;">
+                    <a href="https://www.facebook.com/kreezy.genie/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/allan_archie" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/jinn.allan/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/allan-bosire-13b066180/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
     </div>
-</section>
+</footer>
 <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters

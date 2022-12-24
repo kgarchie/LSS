@@ -1,52 +1,23 @@
-.swiper .swiper-slide .image-container {
+.slider .slider-js {
+  position: relative;
+  height: 85vh;
+}
+.slider .slider-js .swiper .swiper-slide .image-container {
   width: 100%;
   height: 100%;
 }
-.swiper .swiper-slide .image-container img {
+.slider .slider-js .swiper .swiper-slide .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
-.swiper .swiper-slide .image-container .image-caption {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  bottom: 0;
-  left: 0;
-  height: 20%;
-  width: 100%;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-.swiper .swiper-slide .image-container .image-caption .col {
-  text-align: start;
-}
-.swiper .swiper-slide .image-container .call-to-action[role=button] {
-  padding: 1rem;
-  background-color: var(--accent-color);
-  color: #fff;
-  border-radius: 5px;
-  transition: background-color 0.2s cubic-bezier(0, 0.7, 0.4, 0.9);
-}
-.swiper .swiper-slide .image-container .call-to-action[role=button]:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-.swiper .swiper-slide .image-container .call-to-action[role=button].active {
-  background-color: var(--accent-color);
-  color: #fff;
-}
-.swiper .swiper-pagination {
+.slider .slider-js .swiper .swiper-pagination {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.swiper .swiper-pagination .swiper-pagination-bullet {
+.slider .slider-js .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -54,9 +25,42 @@
   margin: 0 0.5rem;
   transition: background-color 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
 }
-.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.slider .slider-js .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--accent-color);
   transition: background-color 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
+}
+.slider .image-caption {
+  position: absolute;
+  display: flex;
+  z-index: 5;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  bottom: 3%;
+  height: 20%;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.slider .image-caption .col {
+  text-align: start;
+}
+.slider .image-caption .call-to-action[role=button] {
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.2s cubic-bezier(0, 0.7, 0.4, 0.9);
+}
+.slider .image-caption .call-to-action[role=button]:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.slider .image-caption .call-to-action[role=button].active {
+  background-color: var(--accent-color);
+  color: #fff;
 }
 
 /*# sourceMappingURL=slider.css.map */
