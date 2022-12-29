@@ -7,7 +7,11 @@
   color: white;
   height: 12vh;
   min-height: 60px;
-  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  transition: height 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
 }
 .nav .logo {
   position: relative;
@@ -69,12 +73,12 @@
 .nav .end .chat-icon-container lottie-player {
   width: 50px;
   height: 50px;
-  transition: scale 0.5s ease;
+  transition: all 0.5s ease;
 }
 .nav .end .chat-icon-container lottie-player:hover {
   cursor: pointer;
   scale: 1.2;
-  transition: scale 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
+  transition: all 0.5s cubic-bezier(0, 0.7, 0.4, 0.9);
 }
 .nav .end .chat-icon-container .chat-notification {
   position: absolute;

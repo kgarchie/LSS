@@ -15,9 +15,12 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body:nth-child(1n) {
@@ -27,19 +30,27 @@ body:nth-child(1n) {
 
 section {
   min-height: fit-content;
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 section::after {
+  position: absolute;
   content: "";
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
+  bottom: -75px;
+  transform: translateX(20%);
   display: block;
-  clear: both;
-  width: 50%;
-  height: 2px;
+  width: 70%;
+  height: 1px;
   background-color: var(--accent-color);
+}
+
+section > h1 {
+  margin-bottom: 50px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=reset.css.map */

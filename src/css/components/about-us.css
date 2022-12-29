@@ -1,0 +1,26 @@
+.about-us {
+  display: grid;
+  place-items: center;
+}
+.about-us > h1 {
+  margin-bottom: 70px;
+}
+.about-us .who-we-are {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.about-us .who-we-are p {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .about-us .who-we-are {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-us .who-we-are p {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */

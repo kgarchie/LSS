@@ -1,4 +1,8 @@
 .slider {
+    margin: 0;
+    margin-top: 12vh;
+    padding: 0;
+    
     .slider-js {
         position: relative;
         height: clamp(70vh, 85vh, 100vh);
@@ -47,7 +51,7 @@
         justify-content: space-around;
         align-items: center;
         left: 0;
-        bottom: 3%;
+        bottom: 0;
         height: 20%;
         width: 100%;
         padding: 1rem;

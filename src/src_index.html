@@ -24,22 +24,22 @@
     <div class="logo"><a href="/"><img class="logo-img" src="images/design/banner.png" alt=""></a></div>
     <div class="mid ">
         <ul class="nav-links">
-            <li class="nav-link">Home</li>
-            <li class="nav-link">About</li>
-            <li class="nav-link">Services</li>
-            <li class="nav-link">Contact</li>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="#about-us">About</a></li>
+            <li class="nav-link"><a href="#services">Services</a></li>
+            <li class="nav-link"><a href="#contact-us">Contact</a></li>
         </ul>
     </div>
     <div class="end">
         <div class="action">
             <div class="chat">
-                <a class="chat-icon-container" role="button" href="#contact">
+                <a class="chat-icon-container" role="button" href="#contact" id="lottie-container">
                     <lottie-player speed="0.3" src="js/lottie/chat.json" background="transparent" loop hover autoplay>
                     </lottie-player>
                 </a>
             </div>
             <div class="portfolio-link">
-                <a href="#portfolio">Our History</a>
+                <a href="#portfolio" id="our-history">Our History</a>
             </div>
         </div>
         <div class="ham">
@@ -89,23 +89,256 @@
 
     <div class="image-caption"></div>
 </section>
-<section class="contact-us">
+<section class="about-us" id="about-us">
+    <h1>Who are we?</h1>
+    <div class="who-we-are">
+        <p class="left">
+            Legionnaire Security Solutions is a security company based in Kenya; Mandera,
+            Garissa and Nairobi with the aim of providing cutting-edge and enhanced security
+            services in this ever-dynamic World by employing education, training and
+            specialized skills.
+        </p>
+        <div class="right">
+            <div class="vision"></div>
+            <div class="mission"></div>
+            <div class="values">
+                <h1>Core Values</h1>
+                <ul>
+                    <li>- Value</li>
+                    <li>- Service and quality excellence</li>
+                    <li>- Integrity and professionalism</li>
+                    <li>- Continual improvement and innovation</li>
+                    <li>- Professional development</li>
+                    <li>- Social responsibility</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <h1>Services</h1>
+    <div class="card-container">
+        <div class="img-card iCard-style4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">One on One</span>
+                    <img src="./images/stock/security-slide-1.jpg" />
+                </div>
+
+                <div class="card-title"><span>SECURITY <br> TRAINING </span></div>
+
+                <div class="toggle" onclick="showText()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <br>
+
+                <div class="card-text">
+                    <p>
+                        Our certified expatriate and local instructors are constantly developing our
+                        training curriculum, making sure the training given to our security personnel
+                        meets national and international standards.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-link">
+                <a type="button" title="Read Full" onclick="showText()">
+                    <span>Read More</span>
+                </a>
+            </div>
+        </div>
+        <div class="img-card iCard-style4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">One on One</span>
+                    <img src="./images/stock/security-slide-2.jpg" />
+                </div>
+
+                <div class="card-title"><span>SECURITY GUARD <br> MANAGEMENT PROGRAM </span></div>
+
+                <div class="toggle" onclick="showText()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <br>
+
+                <div class="card-text">
+                    <p>
+                        Legionnaire Security Solutions not only provides a comprehensive security guard
+                        force, we also play a leading role in managing the transition of security guard
+                        forces for clients interested in outsourcing and improving the performance of
+                        their current security program
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-link">
+                <a type="button" title="Read Full" onclick="showText()">
+                    <span>Read More</span>
+                </a>
+            </div>
+        </div>
+        <div class="img-card iCard-style4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">Image Caption</span>
+                    <img src="./images/stock/security-slide-3.jpg" />
+                </div>
+
+                <div class="card-title"><span>GUARDING </span></div>
+
+                <div class="toggle" onclick="showText()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <br>
+
+                <div class="card-text">
+                    <p>
+                        Following the growing demand of uniformed security services, our security
+                        experts have developed a comprehensive uniformed security service package in
+                        order to address your specific needs, whether it is for your home or your
+                        business.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-link">
+                <a type="button" title="Read Full" onclick="showText()">
+                    <span>Read More </span>
+                </a>
+            </div>
+        </div>
+        <div class="img-card iCard-style4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">Image Caption</span>
+                    <img src="./images/stock/security-slide-4.jpg" />
+                </div>
+
+                <div class="card-title"><span>TECHNICAL <br>SECURITY</span></div>
+                <br>
+                <div class="toggle" onclick="showText()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <br>
+
+                <div class="card-text">
+                    <p>
+                        Designing technical security systems for efficiency, integrity, longevity and
+                        sustainability is an important part of our renowned IT integrated security
+                        approach
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-link">
+                <a title="Read Full" onclick="showText()" type="button">
+                    <span>Read More </span>
+                </a>
+            </div>
+        </div>
+        <div class="img-card iCard-style4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">Image Caption</span>
+                    <img src="./images/stock/security-slide-5.jpg" />
+                </div>
+
+                <div class="card-title"><span>CONSULTANCY <br> &nbsp;</span></div>
+
+                <div class="toggle" onclick="showText()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <br>
+
+                <div class="card-text">
+                    <p>
+                        Legionnaire Security Solutions also provides support services within the area of
+                        consultancy. Our expertise encompasses: -
+                        - Private Confidential Background Checks and Commercial Inquiries
+                        - Security Reviews and Risk Assessments
+                        - Technical Security Systems
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-link">
+                <a title="Read Full" type="button" onclick="showText()">
+                    <span>Read More</span>
+                </a>
+            </div>
+        </div>
+        <div class="img-card iCard-style4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">Image Caption</span>
+                    <img src="./images/stock/security-slide-1.jpg" />
+                </div>
+
+                <div class="card-title"><span>PRODUCT SUPPORT SERVICE </span></div>
+
+                <div class="toggle" onclick="showText()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <br>
+
+                <div class="card-text">
+                    <p>
+                        Our fully trained product service staff provides a market leading after-sales
+                        service to our customers and also maintenance services for existing technical
+                        security installations
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-link">
+                <a type="button" title="Read Full" onclick="showText()">
+                    <span>Read More</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="contact-us" id="contact-us">
+    <h1>Contact Us</h1>
     <div class="email-div" id="contact">
-        <h1>Contact Us</h1>
-        <div class="form">
+        <form class="form" method="get" action="">
+            <div class="form-div">
+                <label for="username" class="form-input-label">Your Name: (Optional)</label>
+                <input type="text" placeholder="Username" id="username" name="username">
+            </div>
             <div class="form-div">
                 <label for="email" class="form-input-label">Your Email:</label>
-                <input type="text" placeholder="someone@domain.com" id="email">
+                <input type="text" placeholder="someone@domain.com" id="email" name="email">
             </div>
             <div class="form-div">
                 <label for="message" class="form-input-label">Your Message:</label>
                 <textarea name="message" id="message" cols="30" rows="10"
                     placeholder="Write your message here 😁"></textarea>
             </div>
-        </div>
+        </form>
 
         <div class="action-buttons">
-            <button class="shop-now">Send Email</button>
+            <button class="shop-now" onclick="sendEmail()">Send Email</button>
             or
             <button class="duse" onclick="openWhatsApp()">WhatsApp</button>
         </div>
@@ -140,9 +373,20 @@
                             class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+            <div class="footer-col">
+                <h4>find us</h4>
+                <div class="social-links" style="width: 200px;">
+                    <a href="https://goo.gl/maps/3XZSxtFQzd6NfSqD9" target="_blank"><i class="fa fa-map-marker"></i></a>
+                    <a style="margin-top: 10px; display: block;" href="https://goo.gl/maps/3XZSxtFQzd6NfSqD9">
+                        Filig plaza, Suite No.5, Ground floor,
+                        10th street, Eastleigh, Nairobi, Kenya.
+                    </>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
+<script src="js/main.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -159,9 +403,14 @@
         },
     });
 </script>
-<script src="js/main.js"></script>
-
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("uTaa7xzoPfrgZTZ6G");
+    })();
+</script>
 </body>
 
 </html>

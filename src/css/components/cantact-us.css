@@ -1,0 +1,65 @@
+.contact-us {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.contact-us .email-div {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .contact-us .email-div {
+    width: 90%;
+  }
+}
+.contact-us .email-div .form > * {
+  margin-top: 1.5rem;
+}
+.contact-us .email-div .form input,
+.contact-us .email-div .form textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent-color);
+  font-family: inherit;
+  border-radius: 5px;
+}
+.contact-us .email-div .form input:focus,
+.contact-us .email-div .form textarea:focus {
+  outline: none;
+}
+.contact-us .email-div .form input:focus::placeholder,
+.contact-us .email-div .form textarea:focus::placeholder {
+  color: var(--primary-color);
+}
+.contact-us .email-div .form .form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-us .email-div .action-buttons {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-us .email-div .action-buttons button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+.contact-us .email-div .action-buttons button:hover {
+  cursor: pointer;
+}
+.contact-us .email-div .action-buttons .duse {
+  background-color: var(--cooler-white);
+  color: hsl(142deg, 70%, 49%);
+  border: 1px solid hsl(142deg, 70%, 49%);
+  border-radius: 5px;
+}
+.contact-us .email-div .action-buttons .shop-now {
+  color: white;
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=cantact-us.css.map */
