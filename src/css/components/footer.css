@@ -2,6 +2,7 @@
   min-height: 250px;
   color: aliceblue;
   width: 100vw;
+  overflow-x: hidden;
 }
 .footer .custom-container {
   max-width: 1170px;
@@ -48,6 +49,9 @@
   .footer .footer-col h4 {
     width: max-content;
   }
+}
+.footer .footer-col a {
+  color: #bbbbbb;
 }
 .footer .footer-col ul li a {
   font-size: 16px;

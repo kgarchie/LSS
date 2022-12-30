@@ -19,10 +19,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 body:nth-child(1n) {
     background-color: var(--primary-color);
     color: white;
