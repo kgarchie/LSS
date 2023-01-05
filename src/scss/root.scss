@@ -2,14 +2,16 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 :root{
-    --primary-color: hsl(214, 64%, 13%);
+    --primary-color: #0A2647;
     --accent-color: hsl(49, 94%, 51%);
+    --secondary-color: hsl(214, 64%, 13%);
     font-family: 'Chivo Mono', 'Courier New', Courier, monospace;
 }
 
 // style bowser track
 ::-webkit-scrollbar{
     width: 0.2rem;
+    height: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb{

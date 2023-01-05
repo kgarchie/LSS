@@ -30,39 +30,50 @@ body:nth-child(1n) {
   color: white;
 }
 
-section {
+section,
+footer {
   min-height: fit-content;
   position: relative;
-  margin-top: 150px;
-  margin-bottom: 150px;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 section::after {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -75px;
-  transform: translateX(20%);
+  bottom: 0;
   display: block;
-  width: 70%;
+  width: 100%;
   height: 1px;
+  z-index: 9;
   background-color: var(--accent-color);
 }
 
+body > *:nth-child(even) {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
 section > h1 {
-  margin-bottom: 50px;
   font-size: 30px;
 }
 
+input,
+textarea {
+  background-color: var(--secondary-color);
+}
+
 :root {
-  --primary-color: hsl(214, 64%, 13%);
+  --primary-color: #0A2647;
   --accent-color: hsl(49, 94%, 51%);
+  --secondary-color: hsl(214, 64%, 13%);
   font-family: "Chivo Mono", "Courier New", Courier, monospace;
 }
 
 ::-webkit-scrollbar {
   width: 0.2rem;
+  height: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -496,6 +507,7 @@ section > h1 {
   width: 300px;
   position: relative;
   display: flex;
+  background-color: var(--primary-color);
   flex-direction: column;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
@@ -663,22 +675,44 @@ section > h1 {
   place-items: center;
 }
 .about-us > h1 {
-  margin-bottom: 70px;
+  margin-bottom: 1rem;
+}
+.about-us iframe {
+  width: 80%;
+  aspect-ratio: 16/9;
+  margin-bottom: 2rem;
 }
 .about-us .who-we-are {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80%;
+  gap: 1rem;
 }
 .about-us .who-we-are p {
+  width: 50%;
+}
+.about-us .who-we-are .right {
   width: 40%;
+}
+.about-us .who-we-are .who-divider {
+  height: inherit;
+  width: 1px;
+  z-index: 10;
+  background-color: var(--accent-color);
 }
 @media screen and (max-width: 768px) {
   .about-us .who-we-are {
     flex-direction: column;
     gap: 2rem;
   }
+  .about-us .who-we-are .who-divider {
+    width: 100%;
+    height: 1px;
+  }
   .about-us .who-we-are p {
+    width: 100%;
+  }
+  .about-us .who-we-are .right {
     width: 100%;
   }
 }
