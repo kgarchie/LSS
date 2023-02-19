@@ -263,7 +263,6 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
 }
 .slider .slider-js .swiper .swiper-pagination {
   position: absolute;
@@ -463,8 +462,8 @@ textarea {
 }
 .contact-us .email-div .action-buttons .duse {
   background-color: var(--cooler-white);
-  color: hsl(142deg, 70%, 49%);
-  border: 1px solid hsl(142deg, 70%, 49%);
+  color: hsl(142, 70%, 49%);
+  border: 1px solid hsl(142, 70%, 49%);
   border-radius: 5px;
 }
 .contact-us .email-div .action-buttons .shop-now {
