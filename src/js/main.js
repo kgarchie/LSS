@@ -13,32 +13,56 @@ let coercialIndex = 0;
 const coercions = [
     {
         h_1: 'Security',
-        p: 'Your security is our top priority',
-        a: 'Get Assuarance',
+        p: 'Night security and Patrol',
+        a: 'Contact Us',
         href: ''
     },
     {
         h_1: 'Service',
-        p: 'Get the number one service',
-        a: 'Get Served',
+        p: 'Highly trained teams with endurance',
+        a: 'Contact Us',
         href: ''
     },
     {
         h_1: 'Reputable',
-        p: 'We have a great reputations',
-        a: 'Get Reliability',
+        p: 'Professional and reliable Legions',
+        a: 'Contact Us',
         href: ''
     },
     {
         h_1: 'Care',
-        p: 'We care for more than just your property',
-        a: 'Our Values',
+        p: 'VIP Principal escort',
+        a: 'Contact Us',
         href: ''
     },
     {
         h_1: 'Robust',
-        p: 'Our personel are robust and well trained',
-        a: 'Our Team',
+        p: 'Around the clock security',
+        a: 'Contact Us',
+        href: ''
+    },
+    {
+        h_1: 'Vigilant',
+        p: 'Close protection services',
+        a: 'Contact Us',
+        href: ''
+    },
+    {
+        h_1: 'Skilled',
+        p: 'Hand to Hand Combat Trained',
+        a: 'Contact Us',
+        href: ''
+    },
+    {
+        h_1: 'Trained',
+        p: 'Highly trained teams with endurance',
+        a: 'Contact Us',
+        href: ''
+    },
+    {
+        h_1: 'Strapped',
+        p: 'Well Equipped Protectors',
+        a: 'Contact Us',
         href: ''
     }
 ];
@@ -126,6 +150,6 @@ setInterval(() => {
         coercialIndex = 0;
     }
     displayCoercions();
-}, 3300);
+}, 3000);
 
 displayCoercions();
