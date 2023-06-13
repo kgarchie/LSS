@@ -5,8 +5,7 @@
   "main": "js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --watch src/scss:src/css",
-    "build": "xcopy src\\css\\*.css css\\ /Y & xcopy src\\js\\*.js js\\ /Y & xcopy src\\src_index.html .\\ /Y & del index.html & rename src_index.html index.html & echo \\'Build Complete\\'"
+    "dev": "sass --watch src/scss:src/css"
   },
   "repository": {
     "type": "git",

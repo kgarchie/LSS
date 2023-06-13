@@ -34,36 +34,6 @@ const coercions = [
         p: 'VIP Principal escort',
         a: 'Contact Us',
         href: ''
-    },
-    {
-        h_1: 'Robust',
-        p: 'Around the clock security',
-        a: 'Contact Us',
-        href: ''
-    },
-    {
-        h_1: 'Vigilant',
-        p: 'Close protection services',
-        a: 'Contact Us',
-        href: ''
-    },
-    {
-        h_1: 'Skilled',
-        p: 'Hand to Hand Combat Trained',
-        a: 'Contact Us',
-        href: ''
-    },
-    {
-        h_1: 'Trained',
-        p: 'Highly trained teams with endurance',
-        a: 'Contact Us',
-        href: ''
-    },
-    {
-        h_1: 'Strapped',
-        p: 'Well Equipped Protectors',
-        a: 'Contact Us',
-        href: ''
     }
 ];
 
